@@ -1,7 +1,4 @@
 const therapies = [
-    { name: 'Therapy A', priceINR: 1000, priceUSD: 15 },
-    { name: 'Therapy B', priceINR: 1500, priceUSD: 22 },
-    { name: 'Therapy C', priceINR: 2000, priceUSD: 30 },
     {
         name: "Abhyanga(Single)",
         priceINR: 4600,
@@ -252,7 +249,7 @@ function loadSummary() {
 
 function printSummary() {
     fetch('/generate-pdf', {
-        method: 'POST',
+        method: 'POST', 
         headers: {
             'Content-Type': 'application/json'
         },
